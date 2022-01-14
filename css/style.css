@@ -1,0 +1,102 @@
+*{ /* Todos os elementos*/
+    margin: 0; /* margem */
+    padding: 0; /*preenchimento */
+}
+
+body{ /*pagina*/
+    font-family: Arial, Helvetica, sans-serif; /*conjunto de fontes */
+    background-color: black; /*fundo da pagina */
+}
+
+.container{ /*elemento em volta da pagina */
+    max-width: 1000px; /*largura maxima */
+    margin: auto; /* cetralizar o elemento na pagina */
+}
+
+header{ /*cabecalho */
+    background-color: #48C5CE; /*cor de fundo */
+    text-align: center; /*alinhamento de texto - cetralizado */
+    color: white; /*cor do texto dentro do background - branco */
+    padding: 10px; /*preenchimento - tamanho do preenchimento */
+
+}
+
+.title{
+    font-size: 26px; /*tamanho do texto */
+}
+
+section{ /*secao */
+    padding: 20px; /*preenchimento - distanciamento da pagina do lado direito */
+    background-image: url(../images/people.jpg); /*imagem de fundo */
+    background-size: cover; /*tamanho do fundo - cobrir tudo */
+    overflow: hidden; /*preencher toda imagem no local */
+}
+
+.formContainer{ /*forma do container */
+    max-width: 230px; /*limitar espaco do container - largura */
+    background-color: #FFFFFFBB; /*cor de fundo do container */
+    padding: 20px; /*preenchimento */
+    float: right; /* colar container no canto direito da pagina */
+}
+
+h2{
+    font-size: 16px; /*tamanho da fonte */
+}
+
+.mb{
+    margin-bottom: 15px; /*tamanho da margem inferior */
+}
+
+input, select{ /*modificar o campo de texto e o botao de enviar */
+    width: 100%; /*tamanho do campo */
+    box-sizing: border-box; /*alinhar borda */
+    padding: 10px; /*preenchimento ,largura */
+    border: none; /*tirar borda */
+    margin-bottom: 10px; /*distancia da margem */
+    outline: 0; /*tirar borda da caixa de texto input */
+}
+
+input[type="submit"]{ /*modificar apenas o botao de enviar, ira modificar todas as tags com o nome de submit */
+    color: white; /*cor do texto */
+    background-color: #48C5CE; /*cor de fundo */
+    font-weight: bold; /* espressura da fonte - negrito */
+    cursor: pointer; /*mudar ponteiro do mouse para maozinha */
+}
+
+select{ /*secao */
+    appearance: none; /*manter o mesmo estilo da caixa de selecao em todos os navegadores */
+    -webkit-appearance: none;/*manter o mesmo estilo da caixa de selecao em todos os navegadores */
+    -moz-appearance: none;/*manter o mesmo estilo da caixa de selecao em todos os navegadores */
+    background-image: url(../images/arrow.jpg); /*imagem de seta na caixa de selecao */
+    background-repeat: no-repeat; /*nao repetir imagem da seta na caixa de selecao */
+    background-position-x: calc(100% - 10px); /*posicao da seta na caixa de selacao */
+    background-position-y: center;/*mudar a posicao da seta para o centro da caixa de selecao */
+}
+
+footer{ /*rodape */
+    background-color: #202121;/*fundo do rodape */
+    padding: 40px;/*afastamento da borda */
+    text-align: center; /*alinhar texto e imagem no centro da tela */
+}
+
+.picture{ /*imagem do rodape */
+    width: 160px; /*largura da imagem */
+
+}
+
+.description{ /*descricao do rodape */
+    color: white;
+    text-align: left;/*texto alinhado a esquerda */
+    display: inline-block;/*display - bloco embutido*/
+    max-width: 40%; /*tamanho maximo desse bloco */
+    margin-left: 40px;/*distancia da margem para direita */
+
+}
+
+.description p, .description h3{ /*descricao do rodape p , h3 */
+    margin-bottom: 20px; /*tamanho da margem inferior */
+}
+
+.description h3{
+    font-size: 24px; /*tamanho da fonte */
+}
